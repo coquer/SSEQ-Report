@@ -1,12 +1,75 @@
-\documentclass[]{article}
+% start: template for headers and footer info that need to be adde in each pade that includes a section
+\chead{\textit{IT-University of Copenhagen} \rangle  SESG-E2013  \rangle \textbf{Group:} 10 Danish Travel card  \rangle \textbf{ID:} 21 \rangle Responsible: All}
+\cfoot{\textbf{Hand-in date:} \today \rangle \textbf{Supervisor:} Marco Nardello \rangle \textbf{Version:} 1 \rangle \textbf{Status: } Done \thepage}
+\renewcommand{\headrulewidth}{0.1pt}
+\renewcommand{\footrulewidth}{0.1pt}
+% ends: headers/footers template
 
-\begin{document}
+\section*{Prioritised List Of Software Qualities}
 
-\title{Title}
-\author{Author}
-\date{Today}
-\maketitle
+\begin{center}
+	\setlength{\tabcolsep}{3em}
+	\begin{tabular}{| l | l | p{6cm} |}
+	
+ 		\hline
+			Software Qualities & Points & Meaning \\ \hline
+   			Safety & 82 & N\slash A \\ \hline
+			
+			\textbf{Security} & \textbf{590} & Strong code structure in case hacking into system(F.x SQL injection)
+			-Unit test
+			-Errors report from users \\ \hline
+			
+			\textbf{Reliability} & \textbf{560} & Computer program’s ability  to perform its intended functions and operations in a system's environment, without experiencing failure (system crash).
 
-Content
+			IEEE-Std-729-1991: “Software reliability is defined as the probability of failure-free operation for a specified period of time in a specified environment” 
 
-\end{document}
+			-Random testing
+			-Redeveloping
+			-Testing in different environments \\ \hline
+			
+			Resilience & 37 & N\slash A \\ \hline
+			
+			Robustness & 210 & N\slash A \\ \hline
+			
+			Under-stability & 210 & N\slash A \\ \hline
+			
+			Testability & 270 & N\slash A \\ \hline
+			
+			Adaptability & 310 &  N\slash A \\ \hline
+			
+			Modularity & 85 & N\slash A \\ \hline
+			
+			Complexity & 120 & N\slash A \\ \hline
+			
+			Portability & 50 & N\slash A \\ \hline
+			
+			\textbf{Usability} & \textbf{580} & The quality of user experience across websites, software, products, and environments. It is easy for users to understand and using the system.
+
+			-Usability Design(UI)
+			-Feedback from users \\ \hline
+			
+			Reusability & 82 & N\slash A \\ \hline
+			
+			Efficiency & 150 & N\slash A \\ \hline
+			
+			Learnability & 280 & N\slash A \\ 
+			
+   		 \hline
+	\end{tabular}
+\end{center}
+
+%\begin{center}
+%    \begin{tabular}{ | l | l | l | p{5cm} |}
+%    \hline
+%    Day & Min Temp & Max Temp & Summary \\ \hline
+%    Monday & 11C & 22C & A clear day with lots of sunshine.  
+%    However, the strong breeze will bring down the temperatures. \\ \hline
+%    Tuesday & 9C & 19C & Cloudy with rain, across many northern regions. Clear spells
+%    across most of Scotland and Northern Ireland,
+%    but rain reaching the far northwest. \\ \hline
+%    Wednesday & 10C & 21C & Rain will still linger for the morning.
+%    Conditions will improve by early afternoon and continue
+%    throughout the evening. \\
+%    \hline
+%    \end{tabular}
+%\end{center}
