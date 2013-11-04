@@ -1,12 +1,68 @@
-\documentclass[]{article}
+% start: template for headers and footer info that need to be adde in each pade that includes a section
+\chead{\textit{IT-University of Copenhagen} \rangle  SESG-E2013  \rangle \textbf{Group:} 10 Danish Travel card  \rangle \textbf{ID:} 61 \rangle Responsible: All}
+\cfoot{\textbf{Hand-in date:} \today \rangle \textbf{Supervisor:} Marco Nardello \rangle \textbf{Version:} 1 \rangle \textbf{Status: } Done \thepage}
+\renewcommand{\headrulewidth}{0.1pt}
+\renewcommand{\footrulewidth}{0.1pt}
+% ends: headers/footers template
 
-\begin{document}
+\section*{Use Case Description}
 
-\title{Title}
-\author{Author}
-\date{Today}
-\maketitle
+\subsection*{Actors}
 
-Content
+\textbf{Customer:}
+A person who uses the Rejsekort system or buys it on behalf of another person.
 
-\end{document}
+\textbf{Customer service:}
+A person who works for the Rejsekort company serving the customers. A person in the customer service can do the same as the customer except for checking in and checking status.
+
+\textbf{Controller:}
+A person who checks whether passengers with Rejsekort are commuting a valid trip. In case they are not, the controller is able to issue them a fine.
+
+\textbf{Financial institute:}
+Withdraws money from the customers account whenever they checkout or add credit to their balance, either by them self or through the customer service.
+
+\subsection*{Use cases}
+\textbf{BlockAccount:}
+An account can be blocked either by the customer or the customer service.
+
+\textbf{CheckBalance:}
+The balance of a customer can be checked both by the customer and the customer service.
+
+\textbf{BlockCardAccount:}
+A customer or the customer service can block a specific card on a customer account.
+
+\textbf{CreateAccount:}
+A customer can create an account or request the customer service to create it.
+
+\textbf{AddBalance extends Withdraw :}
+The customer service or the customer can add balance to his account.
+
+\textbf{CheckOut extends Withdraw:}
+When a passenger ends his commute he is able to checkout, which also can be done by the customer service in cases it is needed
+
+\textbf{Withdraw:}
+Depending on the customers choice, the financial institute withdraws money from the customers bank account when balance is added to the Rejsekort account or when checking out.
+
+\textbf{CheckHistory:}
+The customer service or the customer himself can check the history of activities on the account.
+
+\textbf{CheckCustomerStatus:}
+Its possible for the customer, the customer service and the controller to check whether the passenger traveling on Rejsekort have checked in.
+
+\textbf{SendMail:}
+Both the customer and service can communicate by mail.
+
+\textbf{EraseFine:}
+The customer service can erase a fine given to a customer.
+
+\textbf{CheckIn:}
+A passenger traveling with Rejsekort can check-in when he starts his commute and if he wish he can add:
+\begin{enumerate}
+	\item AddBicycle
+	\item AddAnimal
+	\item AddAdults
+	\item AddKids
+\end{enumerate}
+
+\textbf{GiveFine:}
+The controller can give a passenger a fine.

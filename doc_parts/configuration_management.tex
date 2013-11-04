@@ -1,12 +1,64 @@
-\documentclass[]{article}
+% start: template for headers and footer info that need to be adde in each pade that includes a section
+\chead{\textit{IT-University of Copenhagen} \rangle  SESG-E2013  \rangle \textbf{Group:} 10 Danish Travel card  \rangle \textbf{ID:} 72 \rangle Responsible: All}
+\cfoot{\textbf{Hand-in date:} \today \rangle \textbf{Supervisor:} Marco Nardello \rangle \textbf{Version:} 1 \rangle \textbf{Status: } Done \thepage}
+\renewcommand{\headrulewidth}{0.1pt}
+\renewcommand{\footrulewidth}{0.1pt}
+% ends: headers/footers template
 
-\begin{document}
+\section*{Configuration Management Plan}
 
-\title{Title}
-\author{Author}
-\date{Today}
-\maketitle
+\subsection*{Objectives and scope}
 
-Content
+Even though there is no way to manage what it is unknown, it is essential to have a detailed knowledge of the of the infrastructure in order to make the best use of it, to develop a good CM it should include among other things:
 
-\end{document}
+\begin{itemize}
+	\item Faster problem solution, for better quality of the software and the service, a common problem is the connection to the servers may be down, errors in the magnetic reader of the card/login machine or is not up to date with the latest software containing the latest encryptions keys. Having to detect this most common errors without having a optimal configuration management database can increment the solving time of the problem in a larger scale.
+	
+	\item Efficient change management, it is very important to know all the changes made to the system or structure of it, this way changes can be design not to produce errors of incompatibilities or problems.
+	
+	\item Cost reduction, detailed documentation of all the elements of the configuration allows to avoid unnecessary duplicates, for example: a) Cost of licenses by avoiding having multiple software that has the same functionality b) Illegal copies could carry viruses or any other kind of malware that could put in risk the software/hardware in risk c)Legal requirements with licenses or any other third party application legal requirements that could have a negative impact in the organization and by extension in the system.
+	
+	\item Security it is a big part of our software and having its configuration management database up to date allows to find and fix vulnerabilities in the software.
+\end{itemize}
+												
+\subsection*{Terminology}
+To have a proper CM there is the necessity to have some pre-defined rules, which includes the follow:
+
+\begin{itemize}
+	\item Naming conventions this agreement will be a contract to keep the same name structure for all files, folders, classes, methods, for example:
+	\begin{itemize}
+		
+		\item \textbf{Classes} it will always start with a package name abbreviation, capital letter for each different word describing the class for example: $VYXZSomeReallyImportantClass\{\}$
+		
+		\item \textbf{Method}, it will have same format as it predecessor but no including the package name, but it will also include what type of method it is or what kind of value it does return or print in the software scope, for example: $SomeImportantMethodBoolean()\{\}$
+		
+		\item \textbf{Folders} and txt files  this will always need to have the $date(YYYYMMDD)$ that was created, person initials, a location of the original file, every different values separated by a dash $(-)$, for example: $20131023-GD-JC-filename.extension$
+		
+		\item \textbf{Version} number of the software it will go with $1.0$ for the start, if there is bugs fix it will increment by $0.1$ and if their major changes to the system it will increment by $1.0$
+		
+		\item \textbf{Source} control by using git to control the status of the system, by dividing the source into different branches and only margin them into the final products when all steps of debugging and cleaning the code has been done.
+		
+		\item \textbf{Store location} to keep control of all files that are produced during project evolution, most of files are stored in Google Drive for backups, and the rest of “Software” related files are placed into a private repository to make it accessible from different locations to programmers, developers and designers of the system.
+		
+	\end{itemize}
+\end{itemize}
+
+
+\subsection*{Collaborators}
+During this project since we are using the initials of the person to define the file that it is being created so each member should have an unique initials containing 2 - 3 character depending on availability and a git or mercurial username to being able keep control of our document changes in the central repository or own branch.
+
+List of collaborators:
+\begin{enumerate}
+	\item Jorge Y. Castillo (JC) - jycr753
+	\item Xiaolong Tang (XL) - xiaolongtang89
+	\item Faisal Jarkass (FJ) - faisal1985
+	\item Dhiraj Bikram Malla (DB) - djbik
+	\item Hussein Salem (HS) - husalem
+	\item All members (AM) - N/A
+	\item Aku Nour Shirazi Valta (ANV) - nourshirazi
+\end{enumerate}
+
+This guidelines will help to build a solid CM that it is required to have a efficient software development environment, and post software maintenance or bug fixing. Even though this rules are important and be follow, there is always exceptions for example: Initial software structure mock ups, or hardware placement mock ups.
+\\
+\\
+Control of sub responsibilities and 3rd party software or hardware contractors, to control what the 3rd party software developers have access the only thing that it is available to them, is close source API with the correct list of classes that they can use and how they can extend to be able to do their job programming the required extension for the software.
