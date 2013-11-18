@@ -8,20 +8,171 @@
 \section*{Estimation and Planning}
 
 
+\subsection*{Planning Poker Estimates}
 
-%\begin{center}
-%	\def\arraystretch{1.5}%
-%    \begin{tabular}{ | l | l | l | p{5cm} |}
-%    \hline
-%    Day & Min Temp & Max Temp & Summary \\ \hline
-%    Monday & 11C & 22C & A clear day with lots of sunshine.  
-%    However, the strong breeze will bring down the temperatures. \\ \hline
-%    Tuesday & 9C & 19C & Cloudy with rain, across many northern regions. Clear spells
-%    across most of Scotland and Northern Ireland,
-%    but rain reaching the far northwest. \\ \hline
-%    Wednesday & 10C & 21C & Rain will still linger for the morning.
-%    Conditions will improve by early afternoon and continue
-%    throughout the evening. \\
-%    \hline
-%    \end{tabular}
-%\end{center}
+Planning Poker, also call \textbf{Scrum poker}, using this planning model members of the group make estimates by playing numbered cards face down o the table, instead of speaking them loudly, later the cards get reveled and the estimates can be discussed\footnote{http://en.wikipedia.org/wiki/Planning_poker}.
+
+\subsubsection*{Problem Domain Analysis}
+
+\begin{center}
+	\def\arraystretch{1.5}%
+    \begin{tabular}{ | l |  p{5cm} | p{5cm} |}
+    \hline
+	\textbf{N$0$} & \textbf{Task} & \textbf{Winning Estimation}\\ \hline
+	1 & Explore the user content \begin{enumerate}
+		\item Brainstorm on what research is necessary for your case
+		\item Implement the research
+		\item Document the results in an adequate manner
+		\item Refine your documentation
+	\end{enumerate}  & Hours \begin{enumerate}
+		\item 1
+		\item 2
+		\item 1
+		\item $1/2$
+	\end{enumerate} \\ \hline
+	2 & Rich pictures \begin{enumerate}
+		\item Develop two Rich Pictures
+		\item Present the Rich Pictures for the whole group
+		\item Use the notes to write a short explanation of the rich pictures
+	\end{enumerate} & Hours \begin{enumerate}
+		\item 1 $1/2$
+		\item We were only “1” group
+		\item $1/2$
+	\end{enumerate} \\ \hline
+	
+	3 & Analysis class diagram over problem domain \begin{enumerate}
+		\item Develop a class-event table about the problem domain of your case  
+		\item Develop a class diagram for the problem domain of your case
+		\item Evaluate the class diagram
+		\item Describe the classes
+	\end{enumerate} & Hours \begin{enumerate}
+		\item 1
+		\item 1$1/2$
+		\item $1/2$
+		\item $1/2$
+	\end{enumerate}\\ \hline
+	
+	4 & Project Glossary \begin{enumerate}
+	\item Create a glossary
+	\item Define the central terms in your analysis
+	\end{enumerate} & Hours \begin{enumerate}
+		\item $1/2$ 
+		\item $1/2$
+	\end{enumerate}\\ \hline
+	
+	5 & Supervisor meeting & $1/2$ hour
+
+	\\
+	\hline
+    \end{tabular}
+\end{center}
+
+
+Our estimation was done in the group according to the principles of Planning Poker Estimation. We all had squared papers with different numbers within a range, which were representing a certain amount of time. For each task we laid down a random paper on a table facing down. 
+
+
+This process was repeated for each task until we were satisfied with result of the times given to a task.
+
+
+\subsection*{Three Point Estimation}
+\subsubsection*{Quality in Use}
+
+\begin{left}
+	\def\arraystretch{1.5}%
+    \begin{tabular}{ | l | p{5cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} |}
+    \hline
+	\textbf{N$0$} & \textbf{Task} & \textbf{Best Case} & \textbf{Most likely} & \textbf{Worst Case} & \textbf{Estimation} \\ \hline 
+	
+	1 & Use case diagrams and scenarios \begin{enumerate}
+		\item Brainstorm on the tasks and activities the software is supposed to support
+		\item Development of scenarios 
+		\item Brainstorm on the actors involved in the tasks
+		\item Actor descriptions
+		\item Use case diagram
+	\end{enumerate} & Hours \begin{enumerate} %bestcase
+		\item 1
+		\item $1/2$
+		\item $1/2$
+		\item $1/2$
+		\item 2
+	\end{enumerate} & Hours \begin{enumerate} % most likely
+		\item 1 $1/2$
+		\item 1
+		\item $1/2$
+		\item $1/2$
+		\item 2 $1/2$
+	\end{enumerate} & Hours \begin{enumerate} % worst case
+		\item 2
+		\item 1 $1/2$
+		\item $1/2$
+		\item 1
+		\item 3
+	\end{enumerate} & Hours \begin{enumerate} % estimation
+		\item 1 $1/2$
+		\item 1 		
+		\item $1/2$
+		\item 35 min
+		\item 2 $1/2$
+	\end{enumerate} \\ \hline 	
+
+	
+	2 & Interface design using Mock-ups \begin{enumerate}
+		\item Decide on 2 scenarios that you would like to work with in your mock-up workshop
+		\item Develop an initial interface design
+		\item Prepare 2 mock-up workshops
+		\item Implement the 2 mock-up workshops
+		\item Document the results
+	\end{enumerate} & Hours \begin{enumerate} %bestcase
+		\item $1/2$
+		\item $1/2$
+		\item $1/2$
+		\item $1/2$
+		\item $1/2$
+	\end{enumerate} & Hours \begin{enumerate} % most likely
+		\item $1/2$
+		\item 1
+		\item 1 $1/2$
+		\item 2
+		\item $1/2$
+	\end{enumerate} & Hours \begin{enumerate} % worst case
+		\item $1/2$
+		\item 1 $1/2$
+		\item 2
+		\item 2 $1/2$
+		\item 1
+	\end{enumerate} & Hours \begin{enumerate} % estimation
+		\item $1/2$
+		\item 1	
+		\item 1:25H
+		\item 1:50H
+		\item 0:35H
+	\end{enumerate} \\ \hline 
+	
+	
+	3 & Revising project team protocal \begin{enumerate}
+		\item Changes to the Project Team Protocol
+		\item Propose and discuss changes in the project team 
+	\end{enumerate} & Hours \begin{enumerate} %bestcase
+		\item $1/2$
+		\item $1/2$
+	\end{enumerate} & Hours \begin{enumerate} % most likely
+		\item $1/2$
+		\item $1/2$
+	\end{enumerate} & Hours \begin{enumerate} % worst case
+		\item $1/2$
+		\item $1/2$
+	\end{enumerate} & Hours \begin{enumerate} % estimation
+		\item $1/2$
+		\item $1/2$		
+	\end{enumerate} \\ \hline 
+	
+	4 & Supervisor meeting & $1/2$ hour & $1/2$ hour & $1/2$ hour & $1/2$ hour
+	\\
+    \hline
+    \end{tabular}
+\end{left}
+
+$Estimation =Best Case +4XMost Likely+Worst Case$
+
+In this case we calculated the estimated time for each task based on the three cases; \textit{best case}, \textit{most likely}, and \textit{worst case}. Each case was given a time which we as a group discussed and agreed upon. After all three cases were set, the estimation was calculated based on the estimation formula seen under the table $BestCase + 4 x MostLikely + WorstCase / 6$. The procedure was repeated for all the tasks.
+
